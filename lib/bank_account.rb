@@ -20,6 +20,10 @@ class BankAccount
       @balance += amount
     end
 
+    def pay_out(amount)
+      @balance -= amount
+    end
+
     def display_balance
        "Your balance is $#{@balance}."
     end
